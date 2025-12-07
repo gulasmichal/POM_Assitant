@@ -171,7 +171,7 @@ FIORI_HORIZON_CSS = """
         max-width: var(--sapContent_MaxWidth);
         margin-left: auto;
         margin-right: auto;
-        padding: 0 1.5rem 2rem 1.5rem;
+        padding: 0 1.5rem 4rem 1.5rem;
     }
 
     /* ========================================
@@ -569,12 +569,17 @@ FIORI_HORIZON_CSS = """
        FOOTER
        ======================================== */
     .fiori-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
         text-align: center;
-        padding: 2rem 1rem;
-        margin-top: 2rem;
+        padding: 0.75rem 1rem;
+        background: var(--sapBackgroundColor);
         color: var(--sapContent_LabelColor);
-        font-size: 0.875rem;
+        font-size: 0.8125rem;
         border-top: 1px solid #E5E5E5;
+        z-index: 100;
     }
 </style>
 """
