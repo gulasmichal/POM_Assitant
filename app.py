@@ -564,6 +564,18 @@ FIORI_HORIZON_CSS = """
             grid-template-columns: 1fr;
         }
     }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    .fiori-footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+        color: var(--sapContent_LabelColor);
+        font-size: 0.875rem;
+        border-top: 1px solid #E5E5E5;
+    }
 </style>
 """
 
@@ -899,6 +911,13 @@ def main():
     
     # Close content wrapper
     st.markdown('</div>', unsafe_allow_html=True)
+    
+    # Footer
+    st.markdown('''
+    <div class="fiori-footer">
+        Created by Michal Gulas
+    </div>
+    ''', unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
